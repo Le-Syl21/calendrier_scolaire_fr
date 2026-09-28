@@ -1,0 +1,110 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Nouvelle école",
+        "description": "Le calendrier vient de l'Éducation nationale : choisissez l'académie de l'école (elle donne la zone) et son niveau.",
+        "data": {
+          "nom": "Nom",
+          "academie": "Académie",
+          "niveau": "Niveau"
+        },
+        "data_description": {
+          "nom": "Sert à nommer les entités, par exemple « École de Léon ».",
+          "niveau": "Certaines périodes diffèrent entre premier et second degré."
+        }
+      },
+      "semaine": {
+        "title": "La semaine de {nom}",
+        "description": "Les jours et horaires de classe. Les jours fériés et les vacances sont retirés automatiquement.",
+        "data": {
+          "jours": "Jours de classe",
+          "debut": "Début des cours",
+          "fin": "Fin des cours",
+          "fin_mercredi": "Fin des cours le mercredi",
+          "moselle": "École en Moselle",
+          "territoire": "Territoire"
+        },
+        "data_description": {
+          "fin_mercredi": "Seulement si le mercredi est un jour de classe (semaine de quatre jours et demi, collège, lycée).",
+          "moselle": "Ajoute le Vendredi saint et la Saint-Étienne."
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Semaine et jours sans classe",
+        "description": "Les jours sans classe propres à l'école (pont local, journée pédagogique…) s'ajoutent aux vacances et aux jours fériés.",
+        "data": {
+          "jours": "Jours de classe",
+          "debut": "Début des cours",
+          "fin": "Fin des cours",
+          "fin_mercredi": "Fin des cours le mercredi",
+          "moselle": "École en Moselle",
+          "territoire": "Territoire",
+          "jours_sans_classe": "Jours sans classe en plus"
+        },
+        "data_description": {
+          "jours_sans_classe": "Une date ou une période par ligne ou séparées par des virgules : 2026-11-10, 07/05/2027 .. 10/05/2027"
+        }
+      }
+    },
+    "error": {
+      "invalid_days_off": "Date non comprise : utilisez AAAA-MM-JJ ou JJ/MM/AAAA, et « .. » pour une période."
+    }
+  },
+  "selector": {
+    "niveau": {
+      "options": {
+        "primaire": "Maternelle et élémentaire",
+        "college": "Collège",
+        "lycee": "Lycée"
+      }
+    },
+    "jours": {
+      "options": {
+        "lun": "Lundi",
+        "mar": "Mardi",
+        "mer": "Mercredi",
+        "jeu": "Jeudi",
+        "ven": "Vendredi",
+        "sam": "Samedi"
+      }
+    },
+    "territoire": {
+      "options": {
+        "guadeloupe": "Guadeloupe",
+        "saint_martin": "Saint-Martin",
+        "saint_barthelemy": "Saint-Barthélemy"
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "school_day": {
+        "name": "Jour de classe"
+      },
+      "school_day_tomorrow": {
+        "name": "Demain jour de classe"
+      },
+      "in_class": {
+        "name": "En classe"
+      },
+      "holidays": {
+        "name": "Vacances"
+      }
+    },
+    "sensor": {
+      "next_holidays": {
+        "name": "Prochaines vacances"
+      }
+    },
+    "calendar": {
+      "calendar": {
+        "name": "Calendrier"
+      }
+    }
+  }
+}

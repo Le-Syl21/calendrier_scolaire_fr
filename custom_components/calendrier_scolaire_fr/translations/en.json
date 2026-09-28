@@ -1,0 +1,110 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "New school",
+        "description": "The calendar comes from the French Ministry of Education: pick the school's académie (it sets the zone) and its level.",
+        "data": {
+          "nom": "Name",
+          "academie": "Académie",
+          "niveau": "Level"
+        },
+        "data_description": {
+          "nom": "Used to name the entities, for instance \"Leon's school\".",
+          "niveau": "Some periods differ between primary and secondary schools."
+        }
+      },
+      "semaine": {
+        "title": "{nom}'s week",
+        "description": "School days and hours. Public holidays and school holidays are taken out automatically.",
+        "data": {
+          "jours": "School days",
+          "debut": "Classes start",
+          "fin": "Classes end",
+          "fin_mercredi": "Classes end on Wednesday",
+          "moselle": "School in Moselle",
+          "territoire": "Territory"
+        },
+        "data_description": {
+          "fin_mercredi": "Only if Wednesday is a school day (four-and-a-half-day week, collège, lycée).",
+          "moselle": "Adds Good Friday and St Stephen's Day."
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Week and extra days off",
+        "description": "The school's own days off (local bridge, training day…) come on top of holidays and public holidays.",
+        "data": {
+          "jours": "School days",
+          "debut": "Classes start",
+          "fin": "Classes end",
+          "fin_mercredi": "Classes end on Wednesday",
+          "moselle": "School in Moselle",
+          "territoire": "Territory",
+          "jours_sans_classe": "Extra days off"
+        },
+        "data_description": {
+          "jours_sans_classe": "One date or range per line, or comma separated: 2026-11-10, 07/05/2027 .. 10/05/2027"
+        }
+      }
+    },
+    "error": {
+      "invalid_days_off": "Date not understood: use YYYY-MM-DD or DD/MM/YYYY, and \"..\" for a range."
+    }
+  },
+  "selector": {
+    "niveau": {
+      "options": {
+        "primaire": "Nursery and primary",
+        "college": "Collège (lower secondary)",
+        "lycee": "Lycée (upper secondary)"
+      }
+    },
+    "jours": {
+      "options": {
+        "lun": "Monday",
+        "mar": "Tuesday",
+        "mer": "Wednesday",
+        "jeu": "Thursday",
+        "ven": "Friday",
+        "sam": "Saturday"
+      }
+    },
+    "territoire": {
+      "options": {
+        "guadeloupe": "Guadeloupe",
+        "saint_martin": "Saint Martin",
+        "saint_barthelemy": "Saint Barthélemy"
+      }
+    }
+  },
+  "entity": {
+    "binary_sensor": {
+      "school_day": {
+        "name": "School day"
+      },
+      "school_day_tomorrow": {
+        "name": "School day tomorrow"
+      },
+      "in_class": {
+        "name": "In class"
+      },
+      "holidays": {
+        "name": "Holidays"
+      }
+    },
+    "sensor": {
+      "next_holidays": {
+        "name": "Next holidays"
+      }
+    },
+    "calendar": {
+      "calendar": {
+        "name": "Calendar"
+      }
+    }
+  }
+}

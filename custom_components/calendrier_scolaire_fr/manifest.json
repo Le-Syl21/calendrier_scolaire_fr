@@ -1,0 +1,12 @@
+{
+  "domain": "calendrier_scolaire_fr",
+  "name": "Calendrier scolaire FR",
+  "codeowners": ["@Le-Syl21"],
+  "config_flow": true,
+  "documentation": "https://github.com/Le-Syl21/calendrier_scolaire_fr",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/Le-Syl21/calendrier_scolaire_fr/issues",
+  "requirements": ["holidays==0.104"],
+  "version": "0.1.0"
+}

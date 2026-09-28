@@ -68,6 +68,12 @@ Pour plusieurs enfants dans des écoles différentes, ajoutez une école par enf
 - En Guadeloupe, choisissez le territoire (Guadeloupe, Saint-Martin, Saint-Barthélemy) : leurs dates diffèrent parfois.
 - Les horaires sont les mêmes tous les jours, sauf le mercredi.
 
+### 💬 Communauté & support
+
+Des questions, un bug à signaler ou juste envie d'en discuter ? Rejoignez le Discord, section *Home Assistant* :
+
+[![Discord](https://img.shields.io/badge/Discord-Le--Syl21%20Tools-5865F2?logo=discord&logoColor=white)](https://discord.gg/T37DYHmt2j)
+
 <a name="english"></a>
 ## <img src=".github/flags/gb.svg" height="14" alt="GB"> English
 
@@ -109,6 +115,12 @@ The **level** matters: some académies publish different dates for primary and s
 - Far-off years are sometimes published with their first day only ("Début des Vacances d'Été"): the return date is then assumed (1 September in mainland France, about six weeks for the austral winter) and the attributes say `provisoire: true`. It corrects itself once the Ministry publishes the date.
 - In Guadeloupe, pick the territory (Guadeloupe, Saint Martin, Saint Barthélemy): their dates sometimes differ.
 - Class hours are the same every day except Wednesday.
+
+### 💬 Community & support
+
+Questions, bug reports, or just want to chat? Join the Discord, *Home Assistant* section:
+
+[![Discord](https://img.shields.io/badge/Discord-Le--Syl21%20Tools-5865F2?logo=discord&logoColor=white)](https://discord.gg/T37DYHmt2j)
 
 ## Development / Développement
 

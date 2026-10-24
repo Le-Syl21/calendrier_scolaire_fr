@@ -48,8 +48,8 @@ automation:
 
 ### Installation
 
-1. HACS → *Dépôts personnalisés* → `https://github.com/Le-Syl21/calendrier_scolaire_fr`, catégorie *Intégration*.
-2. Installez *Calendrier scolaire FR*, redémarrez Home Assistant.
+1. Dans HACS, cherchez *Calendrier scolaire FR* ([ou ouvrez-la directement dans votre HACS](https://my.home-assistant.io/redirect/hacs_repository/?owner=Le-Syl21&repository=calendrier_scolaire_fr&category=integration)).
+2. Installez-la, redémarrez Home Assistant.
 3. *Paramètres* → *Appareils et services* → *Ajouter une intégration* → *Calendrier scolaire FR*.
 4. Donnez un nom, choisissez l'académie et le niveau, puis les jours et horaires de classe. La semaine habituelle du niveau est proposée : sans le mercredi en maternelle et élémentaire, avec au collège et au lycée. Une école à quatre jours et demi coche le mercredi et indique l'heure de fin du mercredi.
 5. *Configurer* permet ensuite de changer la semaine et d'ajouter les jours sans classe de l'école, une date ou une période par ligne : `2026-11-10` ou `07/05/2027 .. 10/05/2027`.
@@ -98,8 +98,8 @@ The **level** matters: some académies publish different dates for primary and s
 
 ### Installation
 
-1. HACS → *Custom repositories* → `https://github.com/Le-Syl21/calendrier_scolaire_fr`, category *Integration*.
-2. Install *Calendrier scolaire FR*, restart Home Assistant.
+1. In HACS, search for *Calendrier scolaire FR* ([or open it straight in your HACS](https://my.home-assistant.io/redirect/hacs_repository/?owner=Le-Syl21&repository=calendrier_scolaire_fr&category=integration)).
+2. Install it, restart Home Assistant.
 3. *Settings* → *Devices & services* → *Add integration* → *Calendrier scolaire FR*.
 4. Give a name, pick the académie and the level, then the school days and hours. The level's usual week is offered: no Wednesday in nursery and primary, Wednesday included in collège and lycée.
 5. *Configure* then changes the week and adds the school's own days off, one date or range per line: `2026-11-10` or `07/05/2027 .. 10/05/2027`.

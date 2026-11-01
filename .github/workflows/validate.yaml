@@ -33,7 +33,7 @@ jobs:
           persist-credentials: false
       # hassfest has no releases worth following: it checks against Home
       # Assistant's current rules, so it is pinned to a recent master commit.
-      - uses: home-assistant/actions/hassfest@86d4564712fa02543c808e3a693dd04f9d3f8361  # master 2026-09-27
+      - uses: home-assistant/actions/hassfest@86d4564712fa02543c808e3a693dd04f9d3f8361  # master 2026-10-26
 
   hacs:
     runs-on: ubuntu-latest

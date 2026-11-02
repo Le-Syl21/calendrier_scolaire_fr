@@ -5,6 +5,9 @@
 A Home Assistant integration that knows whether there is school today: French school holidays from the Ministry of Education, public holidays, and the school's own week.
 Une intégration Home Assistant qui sait s'il y a école aujourd'hui : vacances scolaires de l'Éducation nationale, jours fériés, et la semaine propre à l'école.
 
+[![HACS Default](https://img.shields.io/badge/HACS-Default-41BDF5.svg)](https://hacs.xyz/)
+[![Open in HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Le-Syl21&repository=calendrier_scolaire_fr&category=integration)
+
 <a name="français"></a>
 ## <img src=".github/flags/fr.svg" height="14" alt="FR"> Français
 
